@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Scrapers - Jobup&period;ch</title>
+        <style>
+</style>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+</style>
+        
+        
+        
+    </head>
+    <body class="vscode-body vscode-light">
+        <h1 id="scrapers---jobupch">Scrapers - <a href="http://Jobup.ch">Jobup.ch</a></h1>
+<h2 id="dependencies">Dependencies</h2>
+<h3 id="software">Software</h3>
+<ul>
+<li><strong><a href="https://www.python.org/downloads/">Python</a></strong>
+<ul>
+<li>Python version 3.7 minimum</li>
+</ul>
+</li>
+</ul>
+<h3 id="python">Python</h3>
+<ul>
+<li><strong><a href="https://pypi.org/project/requests/">Requests</a></strong>
+<ul>
+<li><em>pip install requests</em></li>
+<li>requests est utilisé pour faciliter les requêtes à l'API de jobup</li>
+</ul>
+</li>
+</ul>
+<h2 id="usage">Usage</h2>
+<h3 id="mainpy"><a href="http://main.py">main.py</a></h3>
+<p>Pour démarrer le scraper, simplement exécuter <a href="http://main.py">main.py</a>.
+Si le fichier jobup.db n'existe pas (tel que lors d'un premier lancement), le script ira récolter tous les postes dans le domaine IT. Il créera ensuite la base de données, et y ajoutera tous les postes.</p>
+<p>Si la base de données existe, le script récupérera tous les jobs postés depuis son dernier lancement.</p>
+<p>Avant la fin de chaque éxécution, le script ira récupérer les informations de toute les entreprises qu'il ne trouve pas dans la DB</p>
+
+    </body>
+    </html>
